@@ -1,7 +1,9 @@
 [package]
-name = "rust_codespace"
+name = "fahrenheit_celsius_converter"
 version = "0.1.0"
 edition = "2021"
+license = "GPL-3"
+description = "A simple web temperature converter written in Rust using Actix-Web"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
