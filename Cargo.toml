@@ -9,3 +9,4 @@ description = "A simple web temperature converter written in Rust using Actix-We
 
 [dependencies]
 actix-web = "4"
+serde = "1.0.190"
