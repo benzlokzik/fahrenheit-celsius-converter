@@ -1,15 +1,12 @@
 use actix_web::{web, HttpResponse, Responder};
+use crate::models::temperature_conversion::{Celsius, Fahrenheit};
 
-// Handler for converting Celsius to Fahrenheit
-pub async fn celsius_to_fahrenheit(celsius: web::Path<f64>) -> impl Responder {
-    let celsius = celsius.into_inner();
-    let fahrenheit = celsius * 9.0 / 5.0 + 32.0;
+pub async fn celsius_to_fahrenheit(web::Path(temp): web::Path<f64>) -> impl Responder {
+    let fahrenheit = Celsius::new(temp).to_fahrenheit();
     HttpResponse::Ok().json(fahrenheit)
 }
 
-// Handler for converting Fahrenheit to Celsius
-pub async fn fahrenheit_to_celsius(fahrenheit: web::Path<f64>) -> impl Responder {
-    let fahrenheit = fahrenheit.into_inner();
-    let celsius = (fahrenheit - 32.0) * 5.0 / 9.0;
+pub async fn fahrenheit_to_celsius(web::Path(temp): web::Path<f64>) -> impl Responder {
+    let celsius = Fahrenheit::new(temp).to_celsius();
     HttpResponse::Ok().json(celsius)
 }
