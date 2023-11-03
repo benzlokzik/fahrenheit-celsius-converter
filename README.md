@@ -1,5 +1,5 @@
-# Rust codespace template
+# fahrenheit-celsius-converter
 
 ---
 
-**It's a simple Rust template for Github codespaces**
+Simple http Fahrenheit to Celsius converter using [actix-web](https://actix.rs/).
