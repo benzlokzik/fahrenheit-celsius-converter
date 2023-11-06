@@ -2,7 +2,7 @@
 
 ---
 
-Simple http Fahrenheit to Celsius converter using [actix-web](https://actix.rs/).
+Simple http Fahrenheit/Celsius/Kelvin converter using [actix-web](https://actix.rs/).
 
 
 ---

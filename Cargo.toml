@@ -1,6 +1,6 @@
 [package]
-name = "fahrenheit_celsius_converter"
-version = "0.1.0"
+name = "fahrenheit_celsius_kelvin_converter"
+version = "0.2.0"
 edition = "2021"
 license = "GPL-3"
 description = "A simple web temperature converter written in Rust using Actix-Web"
