@@ -7,7 +7,7 @@ Simple http Fahrenheit/Celsius/Kelvin converter using [actix-web](https://actix.
 
 ---
 
-> [!WARNING]\
+> [!NOTE]\
 > This is a toy project, not yet finished. It's not recommended to use it in production.
 
 
